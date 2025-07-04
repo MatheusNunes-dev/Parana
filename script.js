@@ -18,8 +18,11 @@ const projection = d3.geoMercator()
   .scale(8000)
   .center([-51.5, -24.5])
   .translate([width / 2, height / 2]);
+  
 
-const path = d3.geoPath().projection(projection);
+const path = d3.geoPath()
+    .projection(projection);
+    
 
 // Tooltip simples
 const tooltip = d3.select("body")
@@ -161,7 +164,7 @@ Promise.all([
       return cor || "#ccc";
     })
     .attr("stroke", "#999")
-    .attr("stroke-width", 0.5)
+    .attr("stroke-width", 1)
     .on("mouseover", (event, d) => {
       tooltip.transition().duration(200).style("opacity", 1);
       tooltip.html(`<strong>${d.properties.NM_MUN || d.properties.NAME}</strong><br>
