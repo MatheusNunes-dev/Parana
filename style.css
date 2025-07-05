@@ -117,13 +117,6 @@ body {
 }
 
 /* Suporte para modo escuro */
-@media (prefers-color-scheme: dark) {
-    #map {
-        background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
-        border-color: rgba(255, 255, 255, 0.1);
-    }
-}
-
 #legenda{
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
