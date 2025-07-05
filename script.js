@@ -164,7 +164,7 @@ Promise.all([
       return cor || "#ccc";
     })
     .attr("stroke", "#999")
-    .attr("stroke-width", 1)
+    .attr("stroke-width", 1.5)
     .on("mouseover", (event, d) => {
       tooltip.transition().duration(200).style("opacity", 1);
       tooltip.html(`<strong>${d.properties.NM_MUN || d.properties.NAME}</strong><br>
