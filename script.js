@@ -189,7 +189,7 @@ Promise.all([
     .forEach(([ddd, total]) => {
       legenda.append("li")
         .style("margin-bottom", "4px")
-        .html(`<span style="background:${colorScale(ddd)};display:inline-block;width:20px;height:20px;margin-right:8px;"></span>DDD ${ddd}: ${total.toLocaleString()} pessoas`);
+        .html(`<span style="background:${colorScale(ddd)};display:inline-block;width:20px;height:20px;margin-right:8px;"></span>DDD ${ddd}: ${total.toLocaleString()} habitantes`);
     });
 
 }).catch(error => {
